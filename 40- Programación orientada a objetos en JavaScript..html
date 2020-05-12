@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jessica Maria</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function Suma(no1, no2) {
+            this.no1 = no1;
+            this.no2 = no2;
+            this.primerValor = primerValor;
+            this.segundoValor = segundoValor;
+            this.retornarResultado = retornarResultado;
+        }
+
+        function primerValor(no1) {
+            this.no1 = no1;
+        }
+
+        function segundoValor(no2) {
+            this.no2 = no2;
+        }
+
+        function retornarResultado() {
+            return this.no1 + this.no2;
+        }
+
+        var suma1;
+        suma1 = new Suma(5, 10);
+        document.write('La suma de 5 y 10 es:' + suma1.retornarResultado() + '<br>');
+        suma1.primerValor(70);
+        suma1.segundoValor(30);
+        document.write('La suma de 70 y 30 es:' + suma1.retornarResultado() + '<br>'); 
+    </script>
+
+</body>
+
+</html>
